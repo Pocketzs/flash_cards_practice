@@ -13,4 +13,8 @@ class Turn
   def feedback
     correct? ? "Correct!" : "Incorrect."
   end
+
+  def card_category
+    @card.category
+  end
 end
