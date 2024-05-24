@@ -26,7 +26,7 @@ RSpec.describe Deck do
 
   context "when counting cards" do
     it 'returns the number of cards in the deck' do
-      expect(deck.count).to eq(3)
+      expect(deck.card_count).to eq(3)
     end
   end
 
