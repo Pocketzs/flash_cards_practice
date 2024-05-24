@@ -8,7 +8,7 @@ class Round
   end
 
   def current_card
-    @deck.cards[@turns.count]
+    @deck.cards[@turns.length]
   end
 
   def take_turn(guess)
@@ -30,7 +30,7 @@ class Round
   end
 
   def percent_correct
-    number_correct.to_f / @turns.count * 100
+    number_correct.to_f / @turns.length * 100
   end
 
   def percent_correct_by_category(category)
