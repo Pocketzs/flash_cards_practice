@@ -22,6 +22,10 @@ RSpec.describe Deck do
     it 'has cards' do
       expect(deck.cards).to eq([card_1, card_2, card_3])
     end
+
+    it 'has categories' do
+      expect(deck.categories).to eq([:Geography, :STEM])
+    end
   end
 
   context "when counting cards" do

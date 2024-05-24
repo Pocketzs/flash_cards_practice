@@ -14,4 +14,10 @@ class Deck
       card.category == category
     end
   end
+
+  def categories
+    @cards.group_by do |card|
+      card.category
+    end.keys
+  end
 end
